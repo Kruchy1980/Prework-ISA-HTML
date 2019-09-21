@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Id's + Classes</title>
+    <!-- There are three methodes to connect styles and js commands to the main HTML file. -->
+    <link rel="stylesheet" href="./id-classes.css">
+    <!-- CSS By using style tags in a head of page than with separators connects the styles to HTML Elements -->
+    <style>
+        /* We will put the style to the class  and id by calling them with spwcified separator */
+        #main { /* id separator*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: overline;
+        } 
+        .couple { /* class separator*/
+            /* As we will see the styles added here for all class elements would not  overwrite the inline style */
+            font-size: 30px;
+            color: blueviolet;
+            background-color: black;
+        }
+    </style>
+    
+    <!-- JS Scripts can be linked similar like css file : inline, i head and as separate file -->
+    <script> 
+        alert("You have just opened the site with alert message coded into it in a head tag!")
+    </script>
+    <!-- As we can see both type of extensions as css and js can be linked to HTML on three methodes but nowadays the only one is recommended it means the methode which is connecting both languages from separate files  -->
+</head>
+<body>
+    
+    <h1>To see how you can connect/link css and Js files to HTML code please open the HTML file in text editor.</h1>
+    <hr>
+    
+    <h2>Differences between Id's and Classes + linking to css, and js files.</h1>
+    <div id="main">The id of element is unique and it means that can be used one for one element of the page ad that one called <strong> main</strong></div>
+    
+    <p> The <strong>script</strong> we can put inline in tags - not recommended </p>
+    <p>To add the script to the element we can do it inline as below <strong>Click the comuniacte below</strong></p>
+    <div id="middle" onclick="alert('Hi Duude this is inline script which displayed you that alert')">And that one for the another element other name <strong>middle</strong>. ID's are called with "#" sign in front of the name eg #middle is an id of that element</div> <hr>
+
+    <p>Here we separate tags with Id's and Class/es.</p> <hr>
+
+    <p> The <strong>styles</strong> as below we can put inline in tags - not recommended  but is the strongest it means it overrides all next styles added with nother methodes if are nor marked as !important</p>   
+    <div class="couple"  style="color: orange; background: grey; font-size: 45px;">The Main difference between classes and Id's is that classes can be used for couple different elements. </div>
+    <div class="couple">As in here we are using the same class name to couple separate elements</div>
+    <hr><p>For that style below we have used css file style with !important tag which as we can see is overwriting the inline styles but only this one which were marked as !important in css file</p>
+    <div class="couple other" style="color: orange; background: grey; font-size: 45px;">The classes are called with the "." in front of the name</div>
+    <hr> 
+    
+    <div class="couple" id="javas">For example ".couple" is a class of these 5 elements <strong> ----- Click me Please</strong></div>
+    <div class="couple">That one as well. The ID's and classes are used for different things for creating the webpage, for example for linking by anchor tag, for linking with css file and styles in in, and for lining with .js file and used for call up by specified comands dependend of programming language used HTML as CSS, JS/jQuery - which is a librqary of javascript, Python and many more.</div>
+
+    <!-- Here is the best place to put script tag and link js file to the HTML Code -->
+    <script src="./id-classes.js"></script>
+</body>
+</html>
