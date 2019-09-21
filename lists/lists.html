@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lists + smth</title>
+</head>
+<body>
+    <!-- If we want to make a menu wchuch can direct us to particular parts of the page we can put the contents in separate containers, give them id's and than make a simple ahchor tags which will send to the id's.  -->
+    <div id="top"> <!-- Firstly create a container, than go to the bottom of the page. As we can see div's are one of containers which can posses larger -  in HTML 5 content-->
+    <!-- That how we can add to page images. -->
+        <img src="./img/yacht1.png" alt="Oh can not be uploaded"> <img src="./img/motorboat1.png" alt="Oh can not be uploaded">
+        <hr> <!--Here are tags he which put a line to our site to visibly separate the page modules from each others-->
+        <!--Now if we want to we can put the links in unordered list to make later on a menu from it.-  -->
+        <ul>
+            <li><a href="./contact.html">Contact Us</a></li> <br> <!--The br tag is finishing the line and starts the next one. -->
+            <li><a href="./prices.html" target="_blank">Prices</a></li> <br>
+            <li><a href="https://www.google.com/">To web searcher</a></li> <br>
+            <li><a href="./downloads/all-prices.pdf">All prices - pdf</a></li>
+        </ul>
+        <hr> 
+    </div>
+    <div id="main-content">
+        <h1>Welcome to the yacht shop!</h1><small>Couple information about simple tags which can edit the text on the page.</small>
+        <p>Here you can choose the best <small> Yachts</small> you can imagine</p>
+        <hr>
+        <h2>Types of Yachts for sell</h2>
+        <h3>Motorboats</h3>
+        <p>The boats which main propeller is a motor not wind</p>
+        <h3>Yachts</h3>
+        <p>The boats which main propeller is wind because they are using sails</p>
+    </div>
+    <div id="contact">
+        <h2>About us</h2>
+        <p>You can contact Mr Red in variuos ways...</p>
+        <h3>By phone</h3>
+        <p>0-700-717-772</p> 
+        <h3>By Email</h3>
+        <p>h.red@boat.com</p>
+        <h3>By fax</h3>
+        <p>0048-253-352-332</p>
+    </div>
+        <hr>
+
+        <h4>Here we can put the anchors which direct us to the particulars of the page. 
+            We can make it anywhere we want but for purpose of the page I coded it here.
+        </h4>
+    <div id="sub-menu"> <!--Name of that div is not important just for the module purpose.-->
+        <!-- Here I create ordered list just to compare the differences. -->
+        <ol start="2"> <!--By using start we can create the order of counting staring from the declared number.-->
+            <li><a href="#top">To top</a></li> <!--And this is tag for going top of the page.-->
+            <li><a href="#content">Show Content</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#sub-menu">Contact us</a></li>
+        </ol>
+    </div> <hr>
+    <h2>The third type of list is Decription/Definition (dl) list coded as below</h2>
+    <div id="description-list">
+        <dl> <!-- This is a main tag of description list-->
+            <dt>Unordered list</dt> <!--That is a key word of description list tag-->
+            <dd>Unordered list is a list without any consideration to order</dd><!--That is a value of the list-->
+            <dt>Ordered list</dt> <!--That is a second key tag of a dl == second item of the list-->
+            <dd>This is a list in which order is important</dd>
+            <dt>Description list</dt>
+            <dd>Description-list contains key wordr == terms, and values == descriptions, like the dictionaries.</dd>
+        </dl>
+        <p>Small Explanation</p>
+        <p>dl == Description/Definition-list</p>
+        <p>dt == Description/Definition-term</p>
+        <p>dd == Description/Definition-data</p>
+    </div>
+    
+</body>
+</html>
